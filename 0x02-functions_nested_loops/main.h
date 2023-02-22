@@ -14,9 +14,9 @@
 
  int print_last_digit(int);
 
- int jack_bauer(void);
+ void jack_bauer(void);
 
- int times_table(void);
+ void times_table(void);
 
  int add(int, int);
 
