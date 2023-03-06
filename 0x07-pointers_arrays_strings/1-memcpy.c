@@ -1,23 +1,23 @@
-#include "main.h"                                                                                                                       
-                                                                                                                                        
-/**                                                                                                                                     
- * *_memcpy -  copies memory area from src to dest                                                                                      
- * @dest: destination                                                                                                                   
- * @src: source                                                                                                                         
- * @n: max bytes to use                                                                                                                 
- * Return: dest                                                                                                                         
- */                                                                                                                                     
-                                                                                                                                        
-                                                                                                                                        
-char *_memcpy(char *dest, char *src, unsigned int n)                                                                                    
-{                                                                                                                                       
-        unsigned int i;                                                                                                                 
-                                                                                                                                        
-        for (i = 0; n > 0 ; i++, n--)                                                                                                   
-        {                                                                                                                               
-                dest[i] = src[i];                                                                                                       
-        }                                                                                                                               
-                                                                                                                                        
-        return (dest);                                                                                                                  
-}
+#include "main.h"
+/**
+ *_memset -   fills memory with a constant byte
+ *@s: pointer block of memory to fill
+ *@b: value to set
+ *@n: bytes of the memory
+ *Return: dest
+ */
 
+char *_memset(char *s, char b, unsigned int n)
+
+{
+	unsigned int i;
+
+	/*Delacring FOR*/
+	for (i = 0; i < n; i++)
+	{
+		*(s + i) = b; /*add 1 position s*/
+
+	} /*END FOR*/
+
+	return (s);
+}
