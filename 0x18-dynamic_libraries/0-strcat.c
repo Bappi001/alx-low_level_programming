@@ -26,9 +26,4 @@ i++;
 dest[i] = '\0';
 
 return (dest);
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 47fdebd255d82f2586e6d2ad13c362ebdbd8e4b7
 }
